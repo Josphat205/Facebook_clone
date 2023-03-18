@@ -1,0 +1,5 @@
+<%= form_with model: Post, url: user_posts_path, method: :post,  local: true, scope: :post do |form| %>
+  <%= form.text_field :text , class: 'form-control mb-2' %>
+  <%= form.file_field :image %>
+  <%= form.submit 'Save post' ,class: "btn btn-primary" %>
+<% end %>
